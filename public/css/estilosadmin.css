@@ -250,6 +250,10 @@ footer { background-color:#0c1a1e; min-height:350px; font-family: 'Open Sans', s
     background-color: blue;
     color: whitesmoke;
 }
+.boton.cerrar{
+    background-color: green;
+    color: whitesmoke;
+}
 
 
 .cabecera{

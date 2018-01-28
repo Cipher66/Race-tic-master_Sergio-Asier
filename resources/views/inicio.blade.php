@@ -106,13 +106,13 @@
                                 </div>
                                 <div class="tab-pane" id="portlet_tab2">
 
-                                    <p>Abrimos enchufamos el OBD en la ranura del coche. La ranura se encuentra debajo del volante.Si no encuentras dónde está la ranura busca aqui:<a href="https://blog.reparacion-vehiculos.es/conector-obd-coche"> ¿Dónde está mi ranura?</a> </p>
+                                    <p>Enchufamos el OBD en la ranura del coche. La ranura se encuentra debajo del volante.Si no encuentras dónde está la ranura busca aqui:<a href="https://blog.reparacion-vehiculos.es/conector-obd-coche"> ¿Dónde está mi ranura?</a> </p>
                                     <img src="images/obd2.jpg" class="imgmitad" width="32%" height="32%">
                                     <br>
                                 </div>
                                 <div class="tab-pane" id="portlet_tab3">
 
-                                    <p>Abrimos la aplicación web, insertamos nuestro coche en la seccion <a href="coches">coches</a> ,(una vez loggeado) introduciendo el numero de serie del OBD correspondiente, la marca del vehículo, el modelo etc ...</p>
+                                    <p>Abrimos la aplicación web, insertamos nuestro coche en la seccion <a href="coches">coches</a> ,(una vez logueado) introduciendo el numero de serie del OBD correspondiente, la marca del vehículo, el modelo etc ...</p>
                                     <img src="images/vistacoches.png" class="imgmitad" width="45%" height="45%">
 
                                 </div>

@@ -5,7 +5,7 @@
 
 @section('content')
     <table>
-        <form method="post" action="{{ url('/adminActualizarUsuario/'.$data->id) }}">
+        <form method="post" action="{{ url('/admin/adminActualizarUsuario/'.$data->id) }}">
             {{ method_field('PUT') }}
             {{ csrf_field() }}
 
