@@ -2,6 +2,9 @@
 
 <link href="{{ asset('css/estilosadmin.css') }}" rel="stylesheet" type="text/css">
 <link href="{{ asset('../css/app.css') }}" rel="stylesheet" type="text/css">
+<script>
+
+</script>
 
 @section('content')
     <h2 class="titulo">Panel de administración de usuarios</h2>
@@ -30,28 +33,28 @@
                         @endif
                     </td>
                 </tr>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Contenido del modal -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Confirmar borrar usuario</h4>
+                            </div>
+                            <div class="modal-body">
+                                <center>¿Borrar usuario?</center>
+                                <a href="adminEliminarUsuario/{{ $data -> id }}" class="boton eliminar">Sí</a>
+                                <a class="boton cerrar" data-dismiss="modal">No</a>
+                            </div>
+                        </div>
+                        <!-- /Contenido del modal -->
+                    </div>
+                </div>
+                <!-- /Modal -->
         @endforeach
 
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
-                <!-- Contenido del modal -->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Confirmar borrar usuario</h4>
-                        </div>
-                        <div class="modal-body">
-                            <center>¿Borrar usuario?</center>
-                            <a href="adminEliminarUsuario/{{ $data -> id }}" class="boton eliminar">Sí</a>
-                            <a class="boton cerrar" data-dismiss="modal">No</a>
-                        </div>
-                    </div>
-                <!-- /Contenido del modal -->
-            </div>
-        </div>
 
-        <!-- /Modal -->
 
         </table>
 

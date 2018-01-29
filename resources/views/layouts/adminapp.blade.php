@@ -39,14 +39,14 @@
 <nav class="navbar">
     <div class="container-fluid" id="navbar">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+            <button type="button" class="navbarADMIN" data-toggle="collapse" data-target="#myNavbar">
+                <span class="iconbarADMIN"></span>
+                <span class="iconbarADMIN iBar2"></span>
+                <span class="iconbarADMIN iBar2"></span>
             </button>
             <a class="navbar-brand" href="inicio" id="titulo">Race-tic / Admin</a>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="collapse navbar-collapse" role="navigation" data-toggle="collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li><a href="adminVerUsuarios" id="menus">Ver usuario </a></li>
                 <li><a href="home2" id="menus">Prueba </a></li>
