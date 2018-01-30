@@ -35,9 +35,6 @@
 
     <link href="css/estiloshome.css" rel="stylesheet">
 
-
-
-
 </head>
 
 <body>
