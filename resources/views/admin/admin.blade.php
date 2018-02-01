@@ -2,8 +2,15 @@
 
 <link href="{{ asset('css/estilosadmin.css') }}" rel="stylesheet" type="text/css">
 <link href="{{ asset('../css/app.css') }}" rel="stylesheet" type="text/css">
+<script src="node_modules/sweetalert2/dist/sweetalert.min.js"></script>
+<link rel="stylesheet" src="node_modules/sweetalert2/dist/sweetalert2.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-
+ $(document).ready(function() {
+    $("#eliminar").click(function() {
+        $(this).sweetAlert("HelloWorld");
+    });
+ });
 </script>
 
 @section('content')
@@ -15,6 +22,7 @@
             <tr class="cabecera">
                 <th class="contenidoCabecera">Nombre</th>
                 <th class="contenidoCabecera">Correo electrónico</th>
+                <th class="contenidoCabecera">Fecha creación</th>
                 <th class="contenidoCabecera">Eliminar</th>
                 <th class="contenidoCabecera">Editar</th>
                 <th class="contenidoCabecera">Confirmado</th>
@@ -23,7 +31,8 @@
                 <tr>
                     <td class="contenidoTabla">{{ $data->name }}</td>
                     <td class="contenidoTabla">{{ $data->email }}</td>
-                    <td class="contenidoTabla"><a data-toggle="modal" data-target="#myModal" class="boton eliminar">Eliminar</a></td>
+                    <td class="contenidoTabla">{{ $data->created_at }}</td>
+                    <td class="contenidoTabla"><a id="eliminar" class="boton eliminar">Eliminar</a></td>
                     <td class="contenidoTabla"><a href="{{ url('admin/adminEditarUsuario/'.$data->id) }}" class="boton editar">Editar</a></td>
                     <td class="contenidoTabla" id="confirmacion">
                         @if($data -> verified == 0)
@@ -49,6 +58,7 @@
                             </div>
                         </div>
                         <!-- /Contenido del modal -->
+                        <!-- data-toggle="modal" data-target="#myModal" -->
                     </div>
                 </div>
                 <!-- /Modal -->

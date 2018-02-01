@@ -12,7 +12,7 @@ var mix = require('laravel-mix');
  */
 
 mix.options({
-    processCssUrls :false,
+    processCssUrls :false
 });
 
 mix.js('resources/assets/js/app.js', 'public/js')

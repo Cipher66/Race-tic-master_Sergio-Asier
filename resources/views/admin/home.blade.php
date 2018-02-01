@@ -8,7 +8,6 @@
         <form method="post" action="{{ url('/adminActualizarUsuario/'.$data->id) }}">
             {{ method_field('PUT') }}
             {{ csrf_field() }}
-
             <div>
                 <table align="center" class="editor table">
                     <tr>
