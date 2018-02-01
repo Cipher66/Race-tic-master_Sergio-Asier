@@ -8,7 +8,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="images/racetic.png" /> <title>Race-tic</title>
-
+    <script src="node_modules/sweetalert2/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" src="node_modules/sweetalert2/dist/sweetalert2.css"/>
 
     <!-- Latest compiled and minified CSS -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -29,6 +30,14 @@
     <link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
 
     <link href="css/estilosadmin.css" rel="stylesheet">
+
+    <script>
+        $(document).ready(function() {
+            $("#eliminar").click(function() {
+                $(this).swal("HelloWorld");
+            });
+        });
+    </script>
 
 
 </head>
