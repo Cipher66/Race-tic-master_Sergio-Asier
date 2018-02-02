@@ -31,16 +31,6 @@
 
     <link href="css/estilosadmin.css" rel="stylesheet">
     <link href="css/menuadmin.css" rel="stylesheet">
-
-    <script>
-        $(document).ready(function() {
-            $("#eliminar").click(function() {
-                $(this).swal("HelloWorld");
-            });
-        });
-    </script>
-
-
 </head>
 
 <body>
@@ -59,8 +49,10 @@
         <div class="collapse navbar-collapse" role="navigation" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
              aria-expanded="false" aria-label="Toggle navigation" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a href="adminVerUsuarios" id="menus">Ver usuario </a></li>
-                <li><a href="home2" id="menus">Prueba </a></li>
+                @if(Auth::guard('admin')->user())
+                <li><a href="adminVerUsuarios" id="menus">Ver usuario</a></li>
+                <li><a href="home2" id="menus">Prueba</a></li>
+                @endif
             </ul>
             <ul class="nav navbar-nav navbar-right">
 

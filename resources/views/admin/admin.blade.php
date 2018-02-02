@@ -2,17 +2,6 @@
 
 <link href="{{ asset('css/estilosadmin.css') }}" rel="stylesheet" type="text/css">
 <link href="{{ asset('../css/app.css') }}" rel="stylesheet" type="text/css">
-<script src="node_modules/sweetalert2/dist/sweetalert.min.js"></script>
-<link rel="stylesheet" src="node_modules/sweetalert2/dist/sweetalert2.css"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
- $(document).ready(function() {
-    $("#eliminar").click(function() {
-        $(this).sweetAlert("HelloWorld");
-    });
- });
-</script>
-
 @section('content')
     <h2 class="titulo">Panel de administración de usuarios</h2>
 

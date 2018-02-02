@@ -56,12 +56,14 @@
              aria-expanded="false" aria-label="Toggle navigation" id="myNavbar">
             <ul class="nav navbar-nav">
                 @guest
+                    <li><a href="#nosotros" id="menus">¿POR QUÉ NOSOTROS?</a></li>
+                    <li><a href="#qsomos" id="menus">QUIENES SOMOS</a></li>
+                    <li><a href="#cfunciona" id="menus">CÓMO FUNCIONA</a></li>
                     <li><a href="contacto" id="menus">CONTACTO</a></li>
-                    <li><a href="comofunciona" id="menus">COMO FUNCIONA</a></li>
                 @else
                     <li><a href="coches" id="menus">COCHES</a></li>
-                    <li><a href="contacto" id="menus">CONTACTO</a></li>
                     <li><a href="carreras" id="menus">CARRERAS</a></li>
+                    <li><a href="contacto" id="menus">CONTACTO</a></li>
                 @endguest
             </ul>
             <ul class="nav navbar-nav navbar-right">

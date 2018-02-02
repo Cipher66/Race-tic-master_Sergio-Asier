@@ -18,7 +18,7 @@
     <div class="container fondodiv">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">¿Por qué nosotros?</h2>
+                <h2 class="section-heading" id="nosotros">¿Por qué nosotros?</h2>
 
             </div>
         </div>
@@ -63,10 +63,10 @@
         <div class="row fondodiv">
             <div>
                 <hr class="my-4">
-                <h3 class="text-center">Quiénes somos</h3>
+                <h3 class="text-center" id="qsomos">Quiénes somos</h3>
                 <p class="">Somos una pequeña empresa del ámbito automovilistico, que analizamos a tiempo real(a través de WiFi 4G) los datos de un coche.Mediante un dispositivo llamado <a href="https://es.wikipedia.org/wiki/OBD">OBD-II </a> el cual se puede conectar al vehiculo y se encarga de almacenar los datos en la <a href="https://es.wikipedia.org/wiki/Computaci%C3%B3n_en_la_nube" >nube</a>,  luego los plasmamos en ésta aplicación web. Es un servicio rápido, fiable y sobre todo sencillo de usar. Ofrecemos la opción de añadir más de un vehiculo a la aplicación y una simple interfaz para gestionar tu perfil. </p>
                 <hr class="my-4">
-                <h3 class="text-center">Cómo funciona</h3>
+                <h3 class="text-center" id="cfunciona">Cómo funciona</h3>
 
 
                 <div class="col-md-6">
