@@ -19,5 +19,8 @@ mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css')
     .sass('resources/assets/sass/estiloshome.scss', 'public/css')
     .sass('resources/assets/sass/estilosemail.scss', 'public/css')
-    .sass('resources/assets/sass/estilosadmin.scss', 'public/css');
+    .sass('resources/assets/sass/estilosadmin.scss', 'public/css')
+    .sass('resources/assets/sass/cuerpohome.scss', 'public/css')
+    .sass('resources/assets/sass/footerhome.scss', 'public/css')
+    .sass('resources/assets/sass/menuadmin.scss', 'public/css');
 

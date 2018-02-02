@@ -30,6 +30,7 @@
     <link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
 
     <link href="css/estilosadmin.css" rel="stylesheet">
+    <link href="css/menuadmin.css" rel="stylesheet">
 
     <script>
         $(document).ready(function() {

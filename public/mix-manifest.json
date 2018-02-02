@@ -3,5 +3,8 @@
     "/css/app.css": "/css/app.css",
     "/css/estiloshome.css": "/css/estiloshome.css",
     "/css/estilosemail.css": "/css/estilosemail.css",
-    "/css/estilosadmin.css": "/css/estilosadmin.css"
+    "/css/estilosadmin.css": "/css/estilosadmin.css",
+    "/css/cuerpohome.css": "/css/cuerpohome.css",
+    "/css/footerhome.css": "/css/footerhome.css",
+    "/css/menuhome.css": "/css/menuhome.css"
 }

@@ -34,6 +34,9 @@
     <link rel="stylesheet" href="../node_modules/sweetalert2/dist/sweetalert2.css">
 
     <link href="css/estiloshome.css" rel="stylesheet">
+    <link href="css/menuhome.css" rel="stylesheet">
+    <link href="css/footerhome.css" rel="stylesheet">
+    <link href="css/cuerpohome.css" rel="stylesheet">
 
 </head>
 
