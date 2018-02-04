@@ -1,7 +1,7 @@
 @extends('layouts.adminapp')
-
-<link href="{{ asset('css/estilosadmin.css') }}" rel="stylesheet" type="text/css">
-<link href="{{ asset('../css/app.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('css/menuadmin.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('/css/app.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('/css/estilosadmin.css') }}" rel="stylesheet" type="text/css">
 @section('content')
     <h2 class="titulo">Panel de administración de usuarios</h2>
 
@@ -51,7 +51,7 @@
                     </div>
                 </div>
                 <!-- /Modal -->
-        @endforeach
+            @endforeach
 
 
 

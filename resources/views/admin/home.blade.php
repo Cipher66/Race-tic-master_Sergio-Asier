@@ -1,5 +1,6 @@
 @extends('layouts.adminapp')
 
+<link href="{{ asset('../css/menuadmin.css') }}" rel="stylesheet" type="text/css" >
 <link href="{{ asset('../css/estilosadmin.css') }}" rel="stylesheet" type="text/css" >
 <link href="{{ asset('../css/app.css') }}" rel="stylesheet" type="text/css" >
 
