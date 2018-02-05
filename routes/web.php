@@ -77,12 +77,12 @@ Route::prefix('admin')->group(function() {
     Route::post('/login', 'AuthAdmin\LoginController@login')->name('admin.login.submit');
     Route::post('/logout', 'AuthAdmin\LoginController@logout')->name('admin.logout');
 
-    /*<-- Editor de usuarios -->*/
-    Route::get('/adminVerUsuarios','GestionarUsuariosController@ver')->name('admin.home');
+    /*<-- Gestor de usuarios -->*/
+    Route::get('/adminVerUsuarios','GestionarUsuariosController@ver')->middleware('admin');
     Route::get('/adminEliminarUsuario/{id}', 'GestionarUsuariosController@eliminar');
-    Route::get('/adminEditarUsuario/{id}', 'GestionarUsuariosController@editar')->name('admin.home');
+    Route::get('/adminEditarUsuario/{id}', 'GestionarUsuariosController@editar')->middleware('admin');
     Route::put ('/adminActualizarUsuario/{id}','GestionarUsuariosController@update');
-    /*<-- /Editor de usuarios -->*/
+    /*<-- /Gestor de usuarios -->*/
 
     Route::get('/home2', function () {
         return view('admin.home');

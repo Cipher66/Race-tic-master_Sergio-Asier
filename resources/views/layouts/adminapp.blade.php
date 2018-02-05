@@ -50,7 +50,7 @@
                     },
                     function(){
                         window.location.href= "adminEliminarUsuario/{{ $data -> id }}";
-                });
+                    });
             });
         });
     </script>

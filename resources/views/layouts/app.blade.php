@@ -38,6 +38,40 @@
     <link href="css/footerhome.css" rel="stylesheet">
     <link href="css/cuerpohome.css" rel="stylesheet">
 
+    <script>
+        window.onscroll = function(){scrollFunction()};
+        function scrollFunction() {
+            if(document.body.scrollTop>20 || document.documentElement.scrollTop>20){
+                document.getElementById("myBtn").style.display = "block";
+
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        
+        function topFunction(){
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        $(document).ready(function() {
+            $("a[href='inicio#nosotros']").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#nosotros").offset().top
+                }, 1000);
+            });
+            $("a[href='inicio#qsomos']").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#qsomos").offset().top
+                }, 1000);
+            });
+            $("a[href='inicio#cfunciona']").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#cfunciona").offset().top
+                }, 1000);
+            });
+        });
+    </script>
+
 </head>
 
 <body>
@@ -56,9 +90,9 @@
              aria-expanded="false" aria-label="Toggle navigation" id="myNavbar">
             <ul class="nav navbar-nav">
                 @guest
-                    <li><a href="#nosotros" id="menus">¿POR QUÉ NOSOTROS?</a></li>
-                    <li><a href="#qsomos" id="menus">QUIENES SOMOS</a></li>
-                    <li><a href="#cfunciona" id="menus">CÓMO FUNCIONA</a></li>
+                    <li><a href="inicio#nosotros" name="nosotros" id="menus">¿POR QUÉ NOSOTROS?</a></li>
+                    <li><a href="inicio#qsomos" id="menus">QUIENES SOMOS</a></li>
+                    <li><a href="inicio#cfunciona" id="menus">CÓMO FUNCIONA</a></li>
                     <li><a href="contacto" id="menus">CONTACTO</a></li>
                 @else
                     <li><a href="coches" id="menus">COCHES</a></li>

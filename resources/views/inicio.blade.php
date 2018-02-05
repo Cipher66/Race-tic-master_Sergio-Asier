@@ -2,7 +2,7 @@
 
 @section('content')
 
-
+<button onclick="topFunction()" id="myBtn">Top</button>
 
 <header class="masthead text-center text-white d-flex parallax">
     <div class="container my-auto">
