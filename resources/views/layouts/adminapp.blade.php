@@ -37,7 +37,7 @@
     <script src="https://cdn.jsdelivr.net/sweetalert2/5.3.5/sweetalert2.min.js"></script>
 
     <script>
-        $(document).ready(function() {
+        /*$(document).ready(function() {
             $("#eliminar").click(function() {
                 swal({
                         title: "¿Eliminar usuario?",
@@ -49,10 +49,10 @@
                         closeOnConfirm: false
                     },
                     function(){
-                        window.location.href= "adminEliminarUsuario/{{ $data -> id }}";
+
                     });
             });
-        });
+        });*/
     </script>
 
 </head>

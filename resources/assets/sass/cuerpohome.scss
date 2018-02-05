@@ -92,8 +92,6 @@ h2,h3,h4,p,label{
   border-top: none;
 }
 
-
-
 ul,li{
   padding:0;
   margin:0;
@@ -109,7 +107,7 @@ li{
   z-index: 99;
   border: none;
   outline: none;
-  background-color: red;
+  background-color: #222222;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -117,5 +115,5 @@ li{
 }
 
 #myBtn:hover {
-  background-color: #555;
+  color: #F05F40;
 }

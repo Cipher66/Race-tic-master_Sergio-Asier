@@ -69,6 +69,9 @@
                     scrollTop: $("#cfunciona").offset().top
                 }, 1000);
             });
+            $("#myBtn").click(function() {
+                $('html, body').animate({scrollTop: 0}, 'slow');
+            });
         });
     </script>
 
