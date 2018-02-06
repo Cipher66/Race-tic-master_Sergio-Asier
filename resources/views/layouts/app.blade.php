@@ -48,11 +48,11 @@
                 document.getElementById("myBtn").style.display = "none";
             }
         }
-        
+        /*
         function topFunction(){
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
-        }
+        }*/
         $(document).ready(function() {
             $("a[href='inicio#nosotros']").click(function() {
                 $('html, body').animate({
@@ -70,7 +70,8 @@
                 }, 1000);
             });
             $("#myBtn").click(function() {
-                $('html, body').animate({scrollTop: 0}, 'slow');
+               // $('html, body').animate({scrollTop: 0}, 'slow');
+                $('html, body').animate({scrollTop: 0}, 1000);
             });
         });
     </script>
