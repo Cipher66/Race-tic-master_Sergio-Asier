@@ -16,7 +16,7 @@ class GestionarUsuariosController extends Controller
     public function eliminar($id)
     {
         DB::table('users')->where('id', '=', $id)->delete();
-        return redirect('adminVerUsuarios');
+        return redirect('/admin/adminVerUsuarios');
     }
     public function editar($id)
     {
