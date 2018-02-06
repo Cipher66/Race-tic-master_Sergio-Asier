@@ -33,28 +33,8 @@
     <!-- SweetAlert -->
     <!--<script src="../node_modules/sweetalert2/dist/sweetalert2.all.js"></script>
     <link rel="stylesheet" href="../node_modules/sweetalert2/dist/sweetalert2.css">-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/sweetalert2/5.3.5/sweetalert2.min.css">
-    <script src="https://cdn.jsdelivr.net/sweetalert2/5.3.5/sweetalert2.min.js"></script>
-
-    <script>
-        /*$(document).ready(function() {
-            $("#eliminar").click(function() {
-                swal({
-                        title: "¿Eliminar usuario?",
-                        text: "Esta acción no se puede deshacer",
-                        type: "warning",
-                        showCancelButton: true,
-                        confirmButtonClass: "btn-danger",
-                        confirmButtonText: "Borrar",
-                        closeOnConfirm: false
-                    },
-                    function(){
-
-                    });
-            });
-        });*/
-    </script>
-
+    <!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/sweetalert2/5.3.5/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/sweetalert2/5.3.5/sweetalert2.min.js"></script>-->
 </head>
 
 <body>

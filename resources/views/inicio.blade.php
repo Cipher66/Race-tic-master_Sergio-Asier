@@ -2,7 +2,7 @@
 
 @section('content')
 
-<button onclick="topFunction()" id="myBtn">Top</button>
+<button onclick="topFunction()" id="myBtn">Subir la página</button>
 
 <header class="masthead text-center text-white d-flex parallax">
     <div class="container my-auto">
@@ -101,24 +101,24 @@
                             <div class="tab-content ">
                                 <div class="tab-pane active " id="portlet_tab1">
 
-                                    <p>Antes de nada, deberemos adquirir nuestro dispositivo OBD-II. Una vez adquirido, abriremos la caja y encontraremos el dispositivo que tendremos que enchufar al coche.Será parecido a la siguiente imagen:</p>
+                                    <p>Primero adquirimos nuestro dispositivo OBD-II. Una vez lo tengamos, abriremos la caja y encontraremos el dispositivo. Será parecido a la siguiente imagen:</p>
                                     <img src="images/obd.png" class="imgmitad" width="29%" height="29%">
                                 </div>
                                 <div class="tab-pane" id="portlet_tab2">
 
-                                    <p>Enchufamos el OBD en la ranura del coche. La ranura se encuentra debajo del volante.Si no encuentras dónde está la ranura busca aqui:<a href="https://blog.reparacion-vehiculos.es/conector-obd-coche"> ¿Dónde está mi ranura?</a> </p>
+                                    <p>Enchufamos el OBD en la ranura del coche. La ranura se encuentra debajo del volante. Si no encuentras dónde está la ranura busca aqui:<a href="https://blog.reparacion-vehiculos.es/conector-obd-coche"> ¿Dónde está mi ranura?</a> </p>
                                     <img src="images/obd2.jpg" class="imgmitad" width="32%" height="32%">
                                     <br>
                                 </div>
                                 <div class="tab-pane" id="portlet_tab3">
 
-                                    <p>Abrimos la aplicación web, insertamos nuestro coche en la seccion <a href="coches">coches</a> ,(una vez logueado) introduciendo el numero de serie del OBD correspondiente, la marca del vehículo, el modelo etc ...</p>
+                                    <p>Abrimos la aplicación web, iniciamos sesión e insertamos nuestro coche en la seccion <a href="coches">coches</a> introduciendo el numero de serie del OBD correspondiente, la marca del vehículo, el modelo etc ...</p>
                                     <img src="images/vistacoches.png" class="imgmitad" width="45%" height="45%">
 
                                 </div>
                                 <div class="tab-pane" id="portlet_tab4">
 
-                                    <p>Tutorial finalizado, ¡ ahora sólo debes usar el coche y disfrutar de todas las funciones que ofrecemos !</p>
+                                    <p>Tutorial finalizado, ¡Ahora sólo debes usar el coche y disfrutar de todas las funciones que ofrecemos!</p>
                                     <img src="images/monigote.png" class="imgmitad" width="22%" height="22%">
                                 </div>
                             </div>

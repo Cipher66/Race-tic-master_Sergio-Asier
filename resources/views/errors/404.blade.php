@@ -13,6 +13,7 @@
     <div class="error-desc">
         <div class="input-group">
             <button onclick="location.href='inicio'" class="md-btn">Inicio</button>
+            <img src="../images/f1404.jpg">
         </div>
     </div>
 </div>
