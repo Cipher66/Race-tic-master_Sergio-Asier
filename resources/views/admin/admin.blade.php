@@ -21,7 +21,7 @@
                     <td class="contenidoTabla">{{ $data->name }}</td>
                     <td class="contenidoTabla">{{ $data->email }}</td>
                     <td class="contenidoTabla">{{ $data->created_at }}</td>
-                    <td class="contenidoTabla"><a id="eliminar" class="boton eliminar">Eliminar</a></td>
+                    <td class="contenidoTabla"><a id="eliminar" data-toggle="modal" data-target="#myModal" class="boton eliminar">Eliminar</a></td>
                     <td class="contenidoTabla"><a href="{{ url('admin/adminEditarUsuario/'.$data->id) }}" class="boton editar">Editar</a></td>
                     <td class="contenidoTabla" id="confirmacion">
                         @if($data -> verified == 0)
@@ -47,7 +47,7 @@
                             </div>
                         </div>
                         <!-- /Contenido del modal -->
-                        <!-- data-toggle="modal" data-target="#myModal" -->
+                        <!--  -->
                     </div>
                 </div>
                 <!-- /Modal -->

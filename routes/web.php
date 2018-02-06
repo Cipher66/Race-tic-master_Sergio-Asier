@@ -78,15 +78,17 @@ Route::prefix('admin')->group(function() {
     Route::post('/logout', 'AuthAdmin\LoginController@logout')->name('admin.logout');
 
     /*<-- Gestor de usuarios -->*/
-    Route::get('/adminVerUsuarios','GestionarUsuariosController@ver')->middleware('admin');
+    Route::get('/adminVerUsuarios','GestionarUsuariosController@ver');
     Route::get('/adminEliminarUsuario/{id}', 'GestionarUsuariosController@eliminar');
-    Route::get('/adminEditarUsuario/{id}', 'GestionarUsuariosController@editar')->middleware('admin');
+    Route::get('/adminEditarUsuario/{id}', 'GestionarUsuariosController@editar');
     Route::put ('/adminActualizarUsuario/{id}','GestionarUsuariosController@update');
     /*<-- /Gestor de usuarios -->*/
 
     Route::get('/home2', function () {
         return view('admin.home');
     });
+
+    //->middleware('admin');
 
     Route::get('/password/reset', 'AuthAdmin\ForgotPasswordController@showLinkRequestForm')->name('admin.password.request');
     Route::post('/password/email', 'AuthAdmin\ForgotPasswordController@sendResetLinkEmail')->name('admin.password.email');
