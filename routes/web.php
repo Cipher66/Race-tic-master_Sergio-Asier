@@ -80,11 +80,19 @@ Route::prefix('admin')->group(function() {
     Route::post('/logout', 'AuthAdmin\LoginController@logout')->name('admin.logout');
 
     /*<-- Gestor de usuarios -->*/
-    Route::get('/adminVerUsuarios','GestionarUsuariosController@ver')->name('admin.home');
+    Route::group(['middleware'=>'admin'], function(){
+        Route::get('/verUsuarios','GestionarUsuariosController@ver');
+    });
+    
     Route::get('/adminEliminarUsuario/{id}', 'GestionarUsuariosController@eliminar');
-    Route::get('/adminEditarUsuario/{id}', 'GestionarUsuariosController@editar')->name('admin.home');
+    Route::get('/editarUsuario/{id}', 'GestionarUsuariosController@editar');
     Route::put ('/adminActualizarUsuario/{id}','GestionarUsuariosController@update');
     /*<-- /Gestor de usuarios -->*/
+
+    /*
+      ->name('admin.home')
+      ->name('admin.home')
+    */
 
     Route::get('/home2', function () {
         return view('admin.home');

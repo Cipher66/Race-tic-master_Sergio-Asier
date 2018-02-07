@@ -22,7 +22,7 @@
                     <td class="contenidoTabla">{{ $data->email }}</td>
                     <td class="contenidoTabla">{{ $data->created_at }}</td>
                     <td class="contenidoTabla"><a id="eliminar" data-toggle="modal" data-target="#myModal" class="boton eliminar">Eliminar</a></td>
-                    <td class="contenidoTabla"><a href="{{ url('admin/adminEditarUsuario/'.$data->id) }}" class="boton editar">Editar</a></td>
+                    <td class="contenidoTabla"><a href="{{ url('admin/editarUsuario/'.$data->id) }}" class="boton editar">Editar</a></td>
                     <td class="contenidoTabla" id="confirmacion">
                         @if($data -> verified == 0)
                             <img src="../images/x_no.png" />
@@ -52,9 +52,6 @@
                 </div>
                 <!-- /Modal -->
             @endforeach
-
-
-
         </table>
 
     </div>
