@@ -83,7 +83,6 @@ Route::prefix('admin')->group(function() {
     Route::group(['middleware'=>'admin'], function(){
         Route::get('/verUsuarios','GestionarUsuariosController@ver');
     });
-    
     Route::get('/adminEliminarUsuario/{id}', 'GestionarUsuariosController@eliminar');
     Route::get('/editarUsuario/{id}', 'GestionarUsuariosController@editar');
     Route::put ('/adminActualizarUsuario/{id}','GestionarUsuariosController@update');
