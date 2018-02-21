@@ -17,7 +17,7 @@ class AdminMiddleware
     public function handle($request, Closure $next)
     {
 
-        if ( Auth::user()->table('admin')){
+        if (Auth::guard('admin')->user()){
             return $next($request);
         }
         return redirect('inicio');

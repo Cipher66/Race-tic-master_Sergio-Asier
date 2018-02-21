@@ -73,25 +73,18 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/verifyemail/{token}', 'Auth\RegisterController@verify');
 
 Route::prefix('admin')->group(function() {
-    Route::get('/', 'AdminController@index')->name('admin.home');
+    Route::get('/', 'AdminController@index')->middleware('admin');//->name('admin.home');
     Route::get('/home', 'AdminController@index')->name('admin.home');
     Route::get('/login', 'AuthAdmin\LoginController@showLoginForm')->name('admin.login');
     Route::post('/login', 'AuthAdmin\LoginController@login')->name('admin.login.submit');
     Route::post('/logout', 'AuthAdmin\LoginController@logout')->name('admin.logout');
 
     /*<-- Gestor de usuarios -->*/
-    Route::group(['middleware'=>'admin'], function(){
-        Route::get('/verUsuarios','GestionarUsuariosController@ver');
-    });
+    Route::get('/verUsuarios','GestionarUsuariosController@ver');
     Route::get('/adminEliminarUsuario/{id}', 'GestionarUsuariosController@eliminar');
     Route::get('/editarUsuario/{id}', 'GestionarUsuariosController@editar');
     Route::put ('/adminActualizarUsuario/{id}','GestionarUsuariosController@update');
     /*<-- /Gestor de usuarios -->*/
-
-    /*
-      ->name('admin.home')
-      ->name('admin.home')
-    */
 
     Route::get('/home2', function () {
         return view('admin.home');

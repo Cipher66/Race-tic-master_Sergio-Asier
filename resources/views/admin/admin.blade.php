@@ -9,6 +9,7 @@
 
         <table align="center" id="tabla" class="table">
             <tr class="cabecera">
+                <th class="contenidoCabecera">ID</th>
                 <th class="contenidoCabecera">Nombre</th>
                 <th class="contenidoCabecera">Correo electrónico</th>
                 <th class="contenidoCabecera">Fecha creación</th>
@@ -18,10 +19,11 @@
             </tr>
             @foreach($usuarios as $key => $data)
                 <tr>
+                    <td class="contenidoTabla">{{ $data->id }}</td>
                     <td class="contenidoTabla">{{ $data->name }}</td>
                     <td class="contenidoTabla">{{ $data->email }}</td>
                     <td class="contenidoTabla">{{ $data->created_at }}</td>
-                    <td class="contenidoTabla"><a id="eliminar" data-toggle="modal" data-target="#myModal" class="boton eliminar">Eliminar</a></td>
+                    <td class="contenidoTabla"><a data-toggle="modal" data-target="#myModal" class="boton eliminar">Eliminar</a></td>
                     <td class="contenidoTabla"><a href="{{ url('admin/editarUsuario/'.$data->id) }}" class="boton editar">Editar</a></td>
                     <td class="contenidoTabla" id="confirmacion">
                         @if($data -> verified == 0)
@@ -42,7 +44,7 @@
                             </div>
                             <div class="modal-body">
                                 <center>¿Borrar usuario?</center>
-                                <a href="adminEliminarUsuario/{{ $data -> id }}" class="boton eliminar">Sí</a>
+                                <a href="adminEliminarUsuario/{{$data->id }}" class="boton eliminar">Sí</a>
                                 <a class="boton cerrar" data-dismiss="modal">No</a>
                             </div>
                         </div>

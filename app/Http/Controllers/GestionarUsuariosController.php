@@ -7,7 +7,7 @@ namespace App\Http\Controllers;
 
 class GestionarUsuariosController extends Controller
 {
-
+//<!--href="adminEliminarUsuario/{{ $data -> id }}"-->
     public function ver()
     {
         $usuarios = DB::table('users')->get();
@@ -15,7 +15,7 @@ class GestionarUsuariosController extends Controller
     }
     public function eliminar($id)
     {
-        DB::table('users')->where('id', '=', $id)->delete();
+        DB::table('users')->where('id', '=' , $id)->delete();
         return redirect('/admin/verUsuarios');
     }
     public function editar($id)
@@ -31,5 +31,7 @@ class GestionarUsuariosController extends Controller
         $data->update();
         return \redirect('/admin/verUsuarios');
     }
+
+        /**/
 
 }
